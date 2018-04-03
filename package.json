@@ -1,0 +1,29 @@
+{
+  "name": "ssr-boilerplate",
+  "version": "1.0.0",
+  "description": "React SSR boilerplate",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build-server": "webpack --config webpack.server.js --watch",
+    "dev:build-client": "webpack --config webpack.client.js --watch"
+  },
+  "author": "Damian Pasek",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "3.5.6",
+    "webpack-dev-server": "2.8.2",
+    "webpack-merge": "4.1.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
